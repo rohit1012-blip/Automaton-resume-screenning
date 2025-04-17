@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume Screening Tool</title>
+</head>
+<body>
+    <h1>Resume Screening Tool</h1>
+    <form action="/analyze" method="post" enctype="multipart/form-data">
+        <label for="resume">Upload Resume (PDF):</label>
+        <input type="file" name="resume" required><br><br>
+
+        <label for="job_description">Enter Job Description (comma-separated skills):</label>
+        <input type="text" name="job_description" required><br><br>
+
+        <button type="submit">Analyze</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Analysis Result</title>
+</head>
+<body>
+    <h1>Resume Analysis Result</h1>
+    <p><strong>Matching Skills:</strong> {{ skills | join(', ') }}</p>
+    <p><strong>Matching Percentage:</strong> {{ percentage }}%</p>
+
+    {% if percentage >= 70 %}
+        <p style="color:green;"><strong>Status:</strong> Shortlisted ✅</p>
+    {% else %}
+        <p style="color:red;"><strong>Status:</strong> Not Shortlisted ❌</p>
+    {% endif %}
+</body>
+</html>
